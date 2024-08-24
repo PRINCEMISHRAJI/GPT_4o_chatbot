@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #eff4f8;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styling for the header */
+.header {
+  width: 100vw;
+}
+
+.header img {
+  width: 125px;
+  height: 125px;
+}
+
+.header h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #4b4a4a;
+}
+
+/* Chat box container */
+.chat-box {
+  width: 60%;
+  max-height: 50vh; /* Limit the height of the chat area */
+  margin: 0 auto 20px; /* Center the chat box and add space below */
+  padding: 15px;
+  background-color: #f9f9f9; /* Light background for chat area */
+  border-radius: 10px;
+  overflow-y: auto; /* Scroll if content exceeds height */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Style for each message */
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  max-width: 80%;
+  word-wrap: break-word;
+  background-color: #dcf8c6; /* Default to user message style */
+}
+
+.message img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 5px; /* Modular space between image and text */
+}
+
+/* Bot message styling */
+.message.bot {
+  background-color: #e0f7fa; /* Light blue for bot messages */
+  align-self: flex-start; /* Align to the left */
+}
+
+/* User message styling */
+.message.user {
+  background-color: #dcf8c6; /* Light green for user messages */
+  align-self: flex-end; /* Align to the right */
+  margin-left: auto; /* Ensure user messages are aligned to the right */
+}
+
+/* Styling for InputBox */
+.input-container {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  position: relative;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  position: relative;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  margin-right: 70px; /* Adjusted to make space for the image preview */
+}
+
+.image-preview-container {
+  position: absolute;
+  right: 60px; /* Adjusted to fit within the input container */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.image-preview {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+/* Search button */
+.search-button {
+  background-color: rgb(110, 110, 206);
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Icon styles */
+.icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.left-icon {
+  margin-right: 10px;
+}
+
+/* Right icon (send) */
+.right-icon {
+  background-color: rgb(110, 110, 206);
+}
+
+/* Styling for Clear Chat Button */
+.btn {
+  background-color: #df5e5e;
+  color: #f1f1f1;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
